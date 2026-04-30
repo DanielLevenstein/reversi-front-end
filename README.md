@@ -28,6 +28,19 @@ Open the shown local URL (usually `http://localhost:5173`).
 
 Make sure the backend is running on `http://localhost:9000` (or change the URL in the UI).
 
+## Code Quality Observations
+
+### Methodology
+Because of security concerns I ran this experiment on a separate browser login so openClaw wouldn't have access to my passwords and security keys. This worked for this project because it had a limited scope but it introduces a scalability problem for larger projects.
+
+# Observations
+- OpenClaw was able to generate the code for the front end application in a couple of hours which is faster than it would take most humans to do it.
+- OpenClaw left all its test files in the root directory rather than putting them under src/test which isn't standard code practice. It is possible it intended to delete these files once the app was functioning.
+- There are several bugs like the CORS access control policy issue where I had to ask it to fix the issue multiple times because OpenClaw declaired them fixed too early.
+- The long response time between prompts made the development process frustrating. 
+- I asked OpenClaw to document it's progress as it went when it stopped doing after a single log message.
+- The total cost of the session came out to 4 cents which is a neglegable amount of money but I image cost would go up with project complexity.
+
 ## Features
 
 - Create new game
