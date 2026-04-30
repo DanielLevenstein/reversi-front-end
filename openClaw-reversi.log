@@ -1,0 +1,4 @@
+[2026-04-29 20:15 CDT] User requested frontend for reversi-game-engine at C:\Users\EsotericBot\reversi-front-end.
+[2026-04-29 20:26 CDT] Installed sbt via Scoop and Java 17 (Temurin). Started backend on http://localhost:9000 and frontend on http://localhost:5174. Docker Desktop install is blocked pending admin/UAC installation rights in this runtime.
+[2026-04-29 21:33 CDT] User requested logging updates. Updated openClaw-reversi.log and created chatlog-reversi.log containing user prompts and assistant responses for this Reversi setup session.
+[2026-04-29 22:25 CDT] Completed end-to-end stabilization: fixed CORS, fixed unsafe gameId parsing, fixed board parsing and coordinate mapping, added final-score popup + pass handling, mitigated race conditions with move/AI request lock, validated full-game simulation, and restarted backend/frontend using background sessions (frontend on dynamic Vite ports, latest observed 5176).
