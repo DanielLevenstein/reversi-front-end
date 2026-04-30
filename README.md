@@ -9,6 +9,9 @@ It calls the [reversi-game-engine](https://github.com/DanielLevenstein/reversi-g
 checkout and run reversi-game-engine backend
 ```
 git clone https://github.com/DanielLevenstein/reversi-game-engine.git
+```
+```
+cp ./conf/application.conf.template ./conf/application.conf
 docker build -t reversi-game-engine:latest .
 docker run -p 9000:9000 reversi-game-engine:latest
 ```
@@ -16,23 +19,12 @@ docker run -p 9000:9000 reversi-game-engine:latest
 checkout and run reversi-front-end
 ```
 git clone https://github.com/DanielLevenstein/reversi-front-end.git
-npm run dev
 ```
-
-# reversi-front-end
-
-Simple browser UI for your `reversi-game-engine` backend.
-
-## Run
-
-```bash
-npm install
+```
 npm run dev
 ```
 
 Open the shown local URL (usually `http://localhost:5173`).
-
-## Backend
 
 Make sure the backend is running on `http://localhost:9000` (or change the URL in the UI).
 
