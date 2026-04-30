@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reversi Front End</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Reversi</h1>
+
+      <section class="panel">
+        <label for="apiBase">Backend URL</label>
+        <input id="apiBase" type="text" value="http://localhost:9000" />
+        <button id="newGameBtn">New Game</button>
+      </section>
+
+      <section class="panel info">
+        <div>Game ID: <span id="gameId">-</span></div>
+        <div>Turn: <span id="turn">-</span></div>
+        <div>Last Move: <span id="lastMove">-</span></div>
+        <div>Status: <span id="status">Ready</span></div>
+      </section>
+
+      <section class="board-wrap">
+        <div id="board" class="board"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

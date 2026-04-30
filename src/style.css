@@ -1,0 +1,96 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.app {
+  max-width: 760px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.panel.info {
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+input, button {
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 0.45rem 0.65rem;
+  border-radius: 0.5rem;
+}
+
+input {
+  width: 280px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.board-wrap {
+  overflow-x: auto;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 56px);
+  grid-template-rows: repeat(8, 56px);
+  border: 3px solid #0b1220;
+  width: fit-content;
+  background: #14532d;
+}
+
+.cell {
+  position: relative;
+  border: 1px solid rgba(15, 23, 42, 0.6);
+  display: grid;
+  place-items: center;
+}
+
+.cell.valid {
+  outline: 2px solid #facc15;
+  outline-offset: -2px;
+  cursor: pointer;
+}
+
+.piece {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+}
+
+.piece.X {
+  background: #020617;
+}
+
+.piece.O {
+  background: #f8fafc;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #fde047;
+  border-radius: 999px;
+}

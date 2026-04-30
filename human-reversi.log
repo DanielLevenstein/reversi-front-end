@@ -1,0 +1,10 @@
+Creating separate log file for human notes:
+Bot was unable to install docker without admin privilages so I had to install it. 
+I have asked the chatbot to create a log file denoting out chat prompts along with it's responses to them at openClaw-reversi.log
+Reported but in new game button caused by CORS access control policy.
+Bot declaired the cause of the issue was browser timeout so I sent it the error message directly from the browser.
+With the amount of time between responses I am definately spending more time waiting on responses that I would if I were to just fix the bugs myself. 
+The game is still broken. This time when I click the New Game button it displays an error saying "Failed to create game: Game not found" I responded with a snarky response about how the bot should check the console logs first rather than checking them as a last resort. 
+The bot has fixed the new game bug now. The game board currently displays what moves are valid but doesn't display what peices are on the board. 
+I just checked the progress of the AI log files and they are misteriously empty. I am going to ask the chatbot to fill them out after it finishes.
+

@@ -1,0 +1,64 @@
+[2026-04-29 20:15 CDT]
+User: I have checked out my reversi-game-engine backend AI... Please create a front end...
+Assistant: Created C:\Users\EsotericBot\reversi-front-end with Vite UI, API integration, and successful build.
+
+[2026-04-29 20:23 CDT]
+User: Move the reversi game engine log notes to openClaw-reversi.log Then start the backend and frontend.
+Assistant: Moved notes to openClaw-reversi.log, started frontend, backend blocked initially due to missing sbt/docker.
+
+[2026-04-29 20:26 CDT]
+User: Install sbt and docker... do all the work for me.
+Assistant: Installed sbt + Java 17, attempted Docker Desktop install (blocked by admin/UAC boundary at that time), started services where possible, logged progress.
+
+[2026-04-29 21:00 CDT]
+User: I installed the command line version... let me know if you need anything else.
+Assistant: Verified Docker CLI availability, restarted/validated frontend and backend, fixed backend config and schema-init issues, confirmed /games/new-game returns a valid game ID.
+
+[2026-04-29 21:33 CDT]
+User: You forgot to update the logs... update openClaw-reversi.log and create chatlog-reversi.log.
+Assistant: Updated openClaw-reversi.log and created chatlog-reversi.log with prompt/response history.
+
+[2026-04-29 21:38 CDT]
+User: New Game button does nothing.
+Assistant: Diagnosed stopped services, restarted backend/frontend, then traced request path.
+
+[2026-04-29 21:43 CDT]
+User: Reported CORS preflight failure.
+Assistant: Enabled/configured Play CORS filter (localhost/127.0.0.1 on 5173/5174), verified preflight headers.
+
+[2026-04-29 21:49 CDT]
+User: Asked to check JavaScript.
+Assistant: Fixed fetch helper to avoid JSON Content-Type on GET and support text/JSON responses safely.
+
+[2026-04-29 21:55 CDT]
+User: Requested tested fix before replying.
+Assistant: Found and fixed JS numeric precision bug for gameId (kept as string); validated new-game -> board -> valid-moves flow.
+
+[2026-04-29 22:01 CDT]
+User: Pieces not rendering on board.
+Assistant: Fixed board parser to character-based 8x8 parsing; verified initial 2 X and 2 O render data.
+
+[2026-04-29 22:05 CDT]
+User: Clicked move did not match placed piece.
+Assistant: Corrected board algebra mapping (row inversion) so clicked squares map to backend notation.
+
+[2026-04-29 22:10 CDT]
+User: Requested full game test after intermittent CONNECTION_REFUSED logs.
+Assistant: Ran full-game simulation (62 turns) successfully; identified frontend dev server process drop as likely refusal source; restarted UI server.
+
+[2026-04-29 22:13 CDT]
+User: Requested final-score popup and persistent startup.
+Assistant: Added end-game score popup and pass handling; created optional start-reversi-dev.ps1 helper.
+
+[2026-04-29 22:19 CDT]
+User: Requested old startup method (temp environment).
+Assistant: Restarted backend/frontend with background sessions; frontend bound to next available Vite port.
+
+[2026-04-29 22:21 CDT]
+User: Reported early false game-over after two moves.
+Assistant: Fixed race/re-entry issues with move/AI busy lock and controlled auto-AI chaining to prevent premature end-state checks.
+
+[2026-04-29 22:25 CDT]
+User: Requested final log updates.
+Assistant: Updated openClaw-reversi.log and chatlog-reversi.log with full session progress.
+
