@@ -36,6 +36,7 @@ Because of security concerns I ran this experiment on a separate browser login s
 # Observations
 - OpenClaw was able to generate the code for the front end application in a couple of hours which is faster than it would take most humans to do it.
 - OpenClaw left all its test files in the root directory rather than putting them under src/test which isn't standard code practice. It is possible it intended to delete these files once the app was functioning.
+- Another observation was the bot chose to implement the app using pure Javascript rather than utilizing Angular or React code which could impact long term maintainability. 
 - There are several bugs like the CORS access control policy issue where I had to ask it to fix the issue multiple times because OpenClaw declaired them fixed too early.
 - The long response time between prompts made the development process frustrating. 
 - I asked OpenClaw to document it's progress as it went when it stopped doing after a single log message.
